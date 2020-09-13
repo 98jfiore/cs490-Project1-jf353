@@ -1,0 +1,50 @@
+body {
+    font-family: Courier;
+    color: #000000;
+    background-color: #F6DBB8;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.recipe {
+    margin: auto;
+    border: 10px solid #450606;
+    border-radius: 25px;
+    padding: 1em;
+    width: 80%;
+    background-color: #FFFFFF;
+}
+    
+    .recipe-title {
+        text-align: center;
+        font-size: 90px;
+        padding-bottom: 1em;
+        font-weight: bold;
+    }
+    
+    .recipe-body {
+        text-align: center;
+        display: flex;
+    }
+        
+        .recipe-body-picture {
+            width: 50%;
+            flex: 1;
+        }
+        
+        .recipe-body-text {
+            font-size: 25px;
+            width: 50%;
+            flex: 1;
+            text-align: left;
+        }
+        
+.tweet {
+    margin: auto;
+    margin-top: 2em;
+    border: 10px solid #450606;
+    border-radius: 25px;
+    padding: 1em;
+    width: 45%;
+    background-color: #FFFFFF;
+}
