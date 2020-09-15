@@ -3,6 +3,8 @@ import flask
 import os
 import random
 import tweepy
+import html
+import datetime
 from dotenv import load_dotenv
 
 #Load environmental variables
@@ -42,15 +44,19 @@ def index():
             break
         tweet = hold
     
-    #Render teh page
+    #Format the Tweet's datetime
+    tweetDT = tweet.created_at
+    tweetTimeStamp = tweetDT.strftime("%-I:%M %p\t&#xB7\t%-m/%-d/%y")
+    
+    #Render the page
     return flask.render_template(
         "index.html",
         selected_food = foods[rand_food],
-        tweet_text = tweet.full_text,
+        tweet_text = html.unescape(tweet.full_text),
         tweet_user_sname = tweet.user.screen_name,
         tweet_user_image = tweet.user.profile_image_url,
         tweet_user_name = tweet.user.name,
-        tweet_timeday = tweet.created_at
+        tweet_timeDate = html.unescape(tweetTimeStamp)
     )
 
 #Run the flask app

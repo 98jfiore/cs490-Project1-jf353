@@ -6,30 +6,39 @@
         <link rel="stylesheet" href="/static/style.css" />
     </head>
     <body>
-        <div class="recipe">
-            <div class="recipe-title">
-                This is Project 1!
+        <div class="title">
+            <div class="title-text">
+                RNGood Food
             </div>
-            <hr>
-            <div class="recipe-body">
-                <div class="recipe-body-picture">
+        </div>
+        <div class="main">
+            <div class="recipe">
+                <div class="recipe-picture">
                     <img src="/static/jfk.jpg" />
                 </div>
-                <div class="recipe-body-text">
+                <div class="recipe-text">
                     <h1>{{selected_food}}</h1><br>
                     4 eggs<br>
                     3 butters<br>
                     53 spoons
                 </div>
             </div>
-        </div>
-        <div class="tweet">
-            <div class="tweet-body">
-                <img src={{tweet_user_image}} />
-                {{tweet_user_name}}<br>
-                @{{tweet_user_sname}}<br>
-                {{tweet_text}}<br>
-                {{tweet_timeday}}
+            <div class="tweet">
+                <div class="tweet-head">
+                    <div class="tweet-head-pic">
+                        <img src={{tweet_user_image}} /> 
+                    </div>
+                    <div class="tweet-head-user">
+                        <span class="tweet-head-user-name">{{tweet_user_name}}</span> <br>
+                        <span class="tweet-head-user-sname">@{{tweet_user_sname}}</span>
+                    </div>
+                </div>
+                <div class="tweet-body">
+                    {{tweet_text}}
+                </div>
+                <div class="tweet-footer">
+                    {{tweet_timeDate}}
+                </div>
             </div>
         </div>
     </body>
