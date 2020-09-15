@@ -4,6 +4,8 @@
     
     This project randomly selects a recipe and displays it, along with a picture from the recipe and a Tweet relating to the recipe.
     
+    At the root directory, there is a .gitignore file set up to ignore .env, which is where API keys are currently being stored.
+    
     KNOWN PROBLEMS
         No Tweets are currently being selected as I cannot figure out how to use config variables in python.
         No recipes are being found as I have not used the Spoonacular API yet
