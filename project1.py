@@ -1,13 +1,18 @@
 # project1.py
 import flask
 import os
+import random
+
+foods = ["Tart", "Pie", "Cake", "Roll", "Donut", "Brittle", "Croissant", "Cupcake", "Fudge", "Creme"]
 
 app = flask.Flask(__name__)
 
 @app.route('/')
 def index():
+    rand_food = random.randint(0, len(foods)-1)
     return flask.render_template(
-        "index.html"
+        "index.html",
+        selected_food = foods[rand_food]
     )
 
 app.run(

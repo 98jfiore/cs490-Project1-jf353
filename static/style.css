@@ -18,7 +18,7 @@ body {
     .recipe-title {
         text-align: center;
         font-size: 90px;
-        padding-bottom: 1em;
+        padding-bottom: 20px;
         font-weight: bold;
     }
     
@@ -38,6 +38,15 @@ body {
             flex: 1;
             text-align: left;
         }
+        
+        .recipe-body h1 {
+            text-decoration: underline;
+        }
+        
+    .recipe hr {
+        width: 100%;
+        border: 3px dashed #450606;
+    }
         
 .tweet {
     margin: auto;
