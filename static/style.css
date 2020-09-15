@@ -49,6 +49,7 @@ body {
     }
         
 .tweet {
+    font-family: Helvetica;
     margin: auto;
     margin-top: 2em;
     border: 10px solid #450606;
