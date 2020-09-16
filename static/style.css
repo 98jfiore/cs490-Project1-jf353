@@ -58,7 +58,7 @@ body {
         border: 5px solid #450606;
         border-radius: 10px;
         
-        background-color: #FFFFFF;
+        background-color: #FAF5F5;
         
         flex: 1;
         flex-grow: 2;
@@ -98,7 +98,7 @@ body {
         border: 5px solid #450606;
         border-radius: 10px;
         
-        background-color: #FFFFFF;
+        background-color: #FAF5F5;
         
         flex: 1;
     }

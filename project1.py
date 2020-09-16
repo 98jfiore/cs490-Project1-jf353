@@ -17,9 +17,6 @@ auth.set_access_token(os.getenv("ACCESS_TOKEN"), os.getenv("ACCESS_TOKEN_SECRET"
 #Get the tweepy object you can use to access the Twitter API
 api = tweepy.API(auth, wait_on_rate_limit=True)
 
-#Date to get Tweets from
-date_since="2017-09-12"
-
 #The list of possible foods to be randomly selected
 foods = ["Tart", "Pie", "Cake", "Roll", "Donut", "Brittle", "Croissant", "Cupcake", "Fudge", "Creme"]
 

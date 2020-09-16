@@ -4,6 +4,9 @@
     
     This project randomly selects a recipe and displays it, along with a picture from the recipe and a Tweet relating to the recipe.
     
+    Before trying to run this app, go to https://developer.twitter.com/en/apply-for-access and apply for access.
+        When you are approved, create a project and save your consumer key, consumer secret, access token, and access token secret.
+    
     At the root directory, there is a .gitignore file set up to ignore .env, which is where API keys are currently being stored.
     In the .env file, the twitter API's consumer key, consumer secret, access token, and access token secret are saved as CONSUMER_KEY,
         CONSUMER_SECRET, ACCESS_TOKEN, and ACCESS_TOKEN_SECRET respectively.
