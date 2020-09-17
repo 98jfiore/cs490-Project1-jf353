@@ -14,13 +14,24 @@
         <div class="main">
             <div class="recipe">
                 <div class="recipe-picture">
-                    <img src="/static/jfk.jpg" />
+                    <img src={{recipe_img}} />
                 </div>
                 <div class="recipe-text">
-                    <h1>{{selected_food}}</h1><br>
-                    4 eggs<br>
-                    3 butters<br>
-                    53 spoons
+                    <div class="recipe-text-title">{{recipe_name}}</div>
+                    <div class="recipe-text-body">
+                        <div class="recipe-text-body-details">
+                            Makes {{recipe_servings}} Servings<br>
+                            Ready in {{recipe_cookTime}} Minutes
+                        </div>
+                        <hr>
+                        <h1>Ingredients</h1>
+                        <ol>
+                            {%for i in range(0, recipe_ingredients_len)%}
+                                <li>{{recipe_ingredients[i]}}</li>
+                            {%endfor%}
+                        </ol>
+                    </div>
+                    <div class="recipe-text-link"><a href={{recipe_link}}>See full recipe!</a></div>
                 </div>
             </div>
             <div class="tweet">

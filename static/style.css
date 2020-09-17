@@ -74,15 +74,47 @@ body {
         
         .recipe-text {
             text-align: left;
-            font-size: 25pt;
             
             width: 50%;
             
             flex: 1;
         }
         
-        .recipe h1 {
-            text-decoration: underline;
+            .recipe-text-body {
+                font-size: 12pt;
+            }
+            
+                .recipe-text-body hr {
+                    border-top: 2px solid #450606;
+                }
+                
+                .recipe-text-body ol {
+                    list-style: none;
+                    
+                    padding-left: 0;
+                }
+                
+                .recipe-text-body li {
+                    padding-bottom: 2px;
+                }
+                
+            .recipe-text-title {
+                text-decoration: underline;
+                font-weight: bold;
+                text-align: center;
+                font-size: 20pt;
+                
+                margin-bottom: 10px;
+            }
+            
+            .recipe-text-link {
+                font-size: 13pt;
+                
+                margin-top: 5px;
+            }
+                
+        .recipe a {
+            color: #450606;
         }
         
     .tweet {

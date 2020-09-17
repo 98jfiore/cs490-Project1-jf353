@@ -6,6 +6,8 @@
     
     Before trying to run this app, go to https://developer.twitter.com/en/apply-for-access and apply for access.
         When you are approved, create a project and save your consumer key, consumer secret, access token, and access token secret.
+    Additionally, sign up for the Spoonacular API at https://spoonacular.com/food-api/console#Dashboard and save your API key.
+        Store it in your .env file with the name SPOON_API_KEY
     
     At the root directory, there is a .gitignore file set up to ignore .env, which is where API keys are currently being stored.
     In the .env file, the twitter API's consumer key, consumer secret, access token, and access token secret are saved as CONSUMER_KEY,
@@ -15,13 +17,13 @@
         To see what was deployed view a preview of the currently running python file.
     
     KNOWN PROBLEMS
-        The styling on the Tweets section is poor.
-        No recipes are being found as I have not used the Spoonacular API yet
+        Explicit and innappropriate Tweets are being selected during search.
+        No recipes are being found as I have not used the Spoonacular API yet.
         Heroku is not currently being used.
     
     INSTALLATIONS
         To run this app, a few things need to be installed.
-            I used pip install for tweepy, python-dotenv, and flask.
+            I used pip install for tweepy, python-dotenv, requests, spoonacular, and flask.
             Git also needs to be downloaded for your environment, you can check if its installed on your CLI with the command "git --version"
             
     TECHNICAL ISSUES AND SOLUTIONS

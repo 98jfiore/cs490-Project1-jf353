@@ -1,4 +1,4 @@
 # .gitignore
 
 # Ignore env files with API keys
-.env
+*.env
